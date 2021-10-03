@@ -45,6 +45,20 @@ public final class Student extends Human{
         this.sex = sex;
     }
 
+    //adding override methods
+    void greeting(){
+        System.out.println("Doesn't matter, you've plenty time, work hard");
+    }
+
+    void greeting(int age){
+        this.age = age;
+        if (age < 20){
+            System.out.println("You are young, don't waste time");
+        } else {
+            System.out.println("You can do it!");
+        }
+    }
+
     @Override
     public String getInfo() {
         return super.getInfo() + "\nName: " + name + "\nAge: " + age;
